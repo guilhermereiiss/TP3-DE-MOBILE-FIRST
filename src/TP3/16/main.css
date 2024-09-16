@@ -1,0 +1,61 @@
+
+.imagem-hotel {
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.ponto-turistico, .pontos-selecionados {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .ponto-turistico, .pontos-selecionados {
+    background-color: #444;
+    color: #fff;
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+}
+
+@media (pointer: fine) {
+  button {
+    padding: 12px;
+  }
+}

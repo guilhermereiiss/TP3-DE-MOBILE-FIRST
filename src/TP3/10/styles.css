@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(4,126,198,1) 73%, rgba(1,190,240,1) 93%, rgba(0,212,255,1) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-toggle {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.menu-list.active {
+  display: block;
+}
+
+.menu-list li {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-list li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+main section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main section img {
+  width: 100px;
+  height: 100px;
+}
+
+main section div h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+main section div {
+  display: flex;
+  flex-direction: column;
+}
+
+main section div p {
+  margin: 0;
+  color: gray;
+}
+
+main div {
+  display: flex;
+  justify-content: space-between;
+}
+
+main div img {
+  width: 120px;
+  height: 159px;
+}
+
+footer h2 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+footer div {
+  display: flex;
+  gap: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+footer div h2 {
+  width: 30%;
+}
+
+footer div img {
+  width: 50px;
+  height: 50px;
+}
+
+.titulos-little {
+  font-size: 1rem;
+}
+
+.post {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+}
+
+.post .comments {
+  margin-top: 10px;
+}
+
+.post .comment {
+  border-top: 1px solid #ddd;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+
+.friend-list, .suggestion-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.friend {
+  display: flex;
+  flex-direction: column;
+}
+
+.friend, .suggestion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 30%; 
+  margin-bottom: 10px;
+}
+
+.friend img, .suggestion img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-list {
+    display: flex;
+    position: static;
+    background: none;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
